@@ -16,7 +16,7 @@
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=ts-node&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-007AAC?style=for-the-badge&logo=sqlite&logoColor=white)
-![Knex](https://img.shields.io/badge/SQLite-E16426?style=for-the-badge&logoColor=white)
+![Knex](https://img.shields.io/badge/Knex-E16426?style=for-the-badge&logoColor=white)
 
 
 ## :information_source: Configuração
@@ -74,10 +74,10 @@ yarn dev
 ``` json
 {
   "name": "José Farias Nuner",
-	"phone": "(71) 9512-3311",
-	"email": "jose_farias@nunes.com",
-	"age": 15,
-	"pets": [
+  "phone": "(71) 9512-3311",
+  "email": "jose_farias@nunes.com",
+  "age": 15,
+  "pets": [
     {
       "name": "Mel",
       "age": 10,
@@ -85,8 +85,8 @@ yarn dev
       "breed": "Poodle",
       "species": "Cachorro",
       "appearance": "Pelo abundante de textura fina, lanoso, bem ondulado,  elástico e resistente à pressão da mão."
-		}
-	]
+    }
+  ]
 }
 ```
 
@@ -94,10 +94,10 @@ yarn dev
 
 ```json
 {
-	"success": true,
-	"message": "create successfull",
-	"payload": {},
-	"errors": []
+  "success": true,
+  "message": "create successfull",
+  "payload": {},
+  "errors": []
 }
 ```
 
@@ -113,10 +113,10 @@ yarn dev
 
 ```json
 {
-	"petshops_id": 2,
+  "petshops_id": 2,
   "name": "Banho e Tosa",
   "description": "Será feito a tosa pela Carolina, que trabalha com muita dedicação e carinho com os animais, e o banho pelo Fabio, muito cuidadoso e atencioso",
-	"duration": "45 minutos",
+  "duration": "45 minutos",
   "total_amount": "249.99"
 }
 ```
@@ -125,10 +125,10 @@ yarn dev
 
 ```json
 {
-	"success": true,
-	"message": "create successfull",
-	"payload": {},
-	"errors": []
+  "success": true,
+  "message": "create successfull",
+  "payload": {},
+  "errors": []
 }
 ```
 
@@ -142,11 +142,11 @@ yarn dev
 
 ```json
 {
-	"petshops_services_id": 1,
-	"pets_id": 1,
-	"scheduling_date": "2022-08-01 13:30:00",
-	"amount_already_paid": false,
-	"finished_at": null
+  "petshops_services_id": 1,
+  "pets_id": 1,
+  "scheduling_date": "2022-08-01 13:30:00",
+  "amount_already_paid": false,
+  "finished_at": null
 }
 ```
 
@@ -154,10 +154,10 @@ yarn dev
 
 ```json
 {
-	"success": true,
-	"message": "create successfull",
-	"payload": {},
-	"errors": []
+  "success": true,
+  "message": "create successfull",
+  "payload": {},
+  "errors": []
 }
 ```
 
