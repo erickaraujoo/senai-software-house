@@ -1,4 +1,4 @@
-import { Pets } from '../pets/pets'
+import { Pet } from '../pets/pets'
 
 export interface Client {
   id: number
@@ -18,5 +18,5 @@ export interface ClientAndPets {
   age: number
   created_at: Date
   updated_at: Date
-  pets: Pets[]
+  pets: Pet[]
 }

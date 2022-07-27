@@ -3,7 +3,7 @@ import { create, ok } from '../../../main/utils/api-response'
 import { ICreateClient } from './../../../domain/use-cases/client/create-client'
 import { HttpRequest } from '../../../presentation/protocols/http'
 
-export class CreateClientsController implements Controller {
+export class CreateClientController implements Controller {
   constructor(private readonly createClient: ICreateClient) {}
 
   async handle(httpRequest: HttpRequest) {

@@ -1,6 +1,6 @@
-import { loadClientsControllerFactory } from '../factories/controller/clients/load-clients-controller-factory'
-import { loadClientControllerFactory } from '../factories/controller/clients/load-client-controller-factory'
-import { createClientControllerFactory } from './../factories/controller/clients/create-client-controller-factory'
+import { loadClientsControllerFactory } from '../factories/controller/client/load-clients-controller-factory'
+import { loadClientControllerFactory } from '../factories/controller/client/load-client-controller-factory'
+import { createClientControllerFactory } from '../factories/controller/client/create-client-controller-factory'
 import { Router } from 'express'
 import { adaptRoute } from '../adapters/adapt-route'
 
