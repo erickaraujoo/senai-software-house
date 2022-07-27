@@ -11,6 +11,9 @@ server.use(logger)
 server.use(cors({ exposedHeaders: 'X-Total-Count' }))
 server.use(helmet())
 
+server.use(express.json({ limit: '50mb' }))
+server.use(express.urlencoded({ limit: '50mb', extended: true }))
+
 setupRoutes(server)
 
 export { server }
