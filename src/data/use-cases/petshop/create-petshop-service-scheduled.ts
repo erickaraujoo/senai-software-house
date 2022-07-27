@@ -1,6 +1,6 @@
 import knex from '../../../main/config/database'
-import { PetshopServiceScheduled } from './../../../domain/models/petshop/petshop-service-scheduled'
-import { ICreatePetshopServiceScheduled } from './../../../domain/use-cases/petshop/create-petshop-service-scheduled'
+import { PetshopServiceScheduled } from '../../../domain/models/petshop/petshop-service-scheduled'
+import { ICreatePetshopServiceScheduled } from '../../../domain/use-cases/petshop/create-petshop-service-scheduled'
 
 export class CreatePetshopServiceScheduled implements ICreatePetshopServiceScheduled {
   async store({

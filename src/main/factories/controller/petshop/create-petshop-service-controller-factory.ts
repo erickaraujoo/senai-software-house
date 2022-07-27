@@ -1,5 +1,5 @@
 import { Controller } from '../../../../presentation/protocols'
-import { CreatePetshopService } from './../../../../data/use-cases/petshops/create-petshop-service'
+import { CreatePetshopService } from '../../../../data/use-cases/petshop/create-petshop-service'
 import { CreatePetshopServiceController } from './../../../../presentation/controller/petshop/create-petshop-service-controller'
 
 export function createPetshopServiceControllerFactory(): Controller {

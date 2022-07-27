@@ -1,6 +1,6 @@
 export interface PetshopService {
   id: number
-  petshops_id: number
+  petshops_id?: number
   name: string
   description: string
   duration: string

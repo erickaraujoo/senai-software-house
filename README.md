@@ -15,7 +15,8 @@
 ## :books: Tecnologias
 
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=ts-node&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-007AAC?style=for-the-badge&logo=sqlite&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-white?style=for-the-badge&logo=sqlite&logoColor=61DAFB)
+![Typescript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Knex](https://img.shields.io/badge/Knex-E16426?style=for-the-badge&logoColor=white)
 
 
@@ -161,8 +162,46 @@ yarn dev
 }
 ```
 
+### 4 - Reagendar serviço
+
+**Método:** PUT
+
+**URL:** http://localhost:3333/petshops/services/scheduled/reschedule
+
+**Body:**
+
+```json
+{
+	"id": 1,
+	"scheduling_date": "2022-10-02 21:30:00"
+}
+```
+
+**Retorno:**
+
+```json
+{
+	"success": true,
+	"message": "create successfull",
+	"payload": {},
+	"errors": []
+}
+```
+
 Os testes acima foram criados utilizando Insomnia. Há um arquivo chamado "collection-insomnia.json" na raiz do projeto, este arquivo pode ser importado no Insomnia para realizar os testes de forma automática com as endpoints criadas.
 
+**Outras endpoints:**
+
+| Método | URL                                         | Descrição                         |
+| :----: | :-----------------------------------------: | :-------------------------------: |
+| GET    | http://localhost:3333/clients               | Retorna todos os clientes         |
+| GET    | http://localhost:3333/clients/:id           | Retorna cliente por ID            |
+| GET    | http://localhost:3333/clients/:id/pets      | Retorna animais por ID do cliente |
+| GET    | http://localhost:3333/pets                  | Retorna todos os animais          |
+| GET    | http://localhost:3333/pets/:id              | Retorna animal por ID             |
+| GET    | http://localhost:3333/petshops              | Retorna todos os petshops         |
+| GET    | http://localhost:3333/petshops/:id          | Retorna petshop por ID            |
+| GET    | http://localhost:3333/petshops/:id/services | Retorna serviços de um petshop    |
 
 --- 
 

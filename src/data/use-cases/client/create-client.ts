@@ -1,7 +1,7 @@
 import { ClientAndPets } from '../../../domain/models/client/client'
 import { ICreateClient } from '../../../domain/use-cases/client/create-client'
 import knex from '../../../main/config/database'
-import { Pet } from './../../../domain/models/pets/pets'
+import { Pet } from '../../../domain/models/pet/pet'
 
 export class CreateClient implements ICreateClient {
   async store({ name, phone, email, age, pets }: ClientAndPets): Promise<number[]> {

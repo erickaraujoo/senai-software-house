@@ -8,3 +8,8 @@ export interface PetshopServiceScheduled {
   updated_at: Date
   finished_at: Date | null
 }
+
+export interface PetshopServiceScheduledReschedule {
+  id: number
+  scheduling_date: Date
+}

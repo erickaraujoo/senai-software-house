@@ -1,4 +1,4 @@
-import { Pet } from '../pets/pets'
+import { Pet } from '../pet/pet'
 
 export interface Client {
   id: number

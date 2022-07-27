@@ -1,5 +1,5 @@
-import { PetshopService } from './../../../domain/models/petshop/petshop-service'
-import { ICreatePetshopService } from './../../../domain/use-cases/petshop/create-petshop-service'
+import { PetshopService } from '../../../domain/models/petshop/petshop-service'
+import { ICreatePetshopService } from '../../../domain/use-cases/petshop/create-petshop-service'
 import knex from '../../../main/config/database'
 
 export class CreatePetshopService implements ICreatePetshopService {
