@@ -1,5 +1,5 @@
 import { Controller } from '../../protocols/controller'
-import { create, ok } from '../../../main/utils/api-response'
+import { create, serverError } from '../../../main/utils/api-response'
 import { ICreateClient } from './../../../domain/use-cases/client/create-client'
 import { HttpRequest } from '../../../presentation/protocols/http'
 
@@ -14,7 +14,7 @@ export class CreateClientController implements Controller {
 
       return create()
     } catch (error) {
-      console.log(error)
+      return serverError(error)
     }
   }
 }

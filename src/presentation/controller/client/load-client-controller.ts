@@ -1,5 +1,5 @@
 import { Controller } from '../../protocols/controller'
-import { notFound, ok } from '../../../main/utils/api-response'
+import { notFound, ok, serverError } from '../../../main/utils/api-response'
 import { ILoadClient } from '../../../domain/use-cases/client/load-client'
 import { HttpRequest } from '../../../presentation/protocols/http'
 
@@ -16,7 +16,7 @@ export class LoadClientController implements Controller {
 
       return ok(result)
     } catch (error) {
-      console.log(error)
+      return serverError(error)
     }
   }
 }

@@ -1,5 +1,5 @@
 import { Controller } from '../../protocols/controller'
-import { create } from '../../../main/utils/api-response'
+import { create, serverError } from '../../../main/utils/api-response'
 import { HttpRequest } from '../../../presentation/protocols/http'
 import { ICreatePetshopServiceScheduled } from './../../../domain/use-cases/petshop/create-petshop-service-scheduled'
 
@@ -14,7 +14,7 @@ export class CreatePetshopServiceScheduledController implements Controller {
 
       return create()
     } catch (error) {
-      console.log(error)
+      return serverError(error)
     }
   }
 }

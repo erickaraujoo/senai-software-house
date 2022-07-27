@@ -1,5 +1,5 @@
 import { Controller } from '../../protocols/controller'
-import { ok } from '../../../main/utils/api-response'
+import { ok, serverError } from '../../../main/utils/api-response'
 import { ILoadClients } from '../../../domain/use-cases/client/load-clients'
 
 export class LoadClientsController implements Controller {
@@ -11,7 +11,7 @@ export class LoadClientsController implements Controller {
 
       return ok(result)
     } catch (error) {
-      console.log(error)
+      return serverError(error)
     }
   }
 }
