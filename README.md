@@ -33,7 +33,7 @@ Entre na pasta gerada após o clone do projeto:
 cd ./senai-software-house
 ```
 
-Faça a instalação dos pacotes inserindo o comando abaixo
+Faça a instalação dos pacotes inserindo o comando abaixo:
 
 ``` bash
 yarn install
@@ -41,7 +41,7 @@ yarn install
 
 Após a instalação dos pacotes, é importante realizar a configuração do banco de dados (SQLite) e inserir dados para testes como forma de verificar se a configuração do banco foi realizada com sucesso. Utilize o comando abaixo
 
-Utilizaremos o **Knex** como SQL query builder e o **SQLite** como banco de dados
+Utilizaremos o **Knex** como SQL query builder e o **SQLite** como banco de dados:
 
 ``` bash
 yarn knex:init
@@ -113,7 +113,7 @@ yarn dev
 
 ```json
 {
-	"petshops_id": 50,
+	"petshops_id": 2,
   "name": "Banho e Tosa",
   "description": "Será feito a tosa pela Carolina, que trabalha com muita dedicação e carinho com os animais, e o banho pelo Fabio, muito cuidadoso e atencioso",
 	"duration": "45 minutos",
