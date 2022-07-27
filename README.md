@@ -172,8 +172,8 @@ yarn dev
 
 ```json
 {
-	"id": 1,
-	"scheduling_date": "2022-10-02 21:30:00"
+  "id": 1,
+  "scheduling_date": "2022-10-02 21:30:00"
 }
 ```
 
@@ -181,10 +181,10 @@ yarn dev
 
 ```json
 {
-	"success": true,
-	"message": "create successfull",
-	"payload": {},
-	"errors": []
+  "success": true,
+  "message": "create successfull",
+  "payload": {},
+  "errors": []
 }
 ```
 
